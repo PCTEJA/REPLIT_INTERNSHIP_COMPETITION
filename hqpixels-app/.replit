@@ -1,0 +1,11 @@
+run = "HOST=0.0.0.0 npm run dev"
+modules = ["nodejs-22"]
+
+[deployment]
+build = ["sh", "-c", "npm ci && npm run build"]
+run = ["sh", "-c", "NODE_ENV=production HOST=0.0.0.0 npm start"]
+deploymentTarget = "autoscale"
+
+[[ports]]
+localPort = 3000
+externalPort = 80

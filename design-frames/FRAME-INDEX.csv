@@ -1,0 +1,61 @@
+﻿version,frame,title,file,width,height
+01-flip,1,Welcome / empty state,01-flip/01-welcome.png,887,1774
+01-flip,2,Capture messy notes,01-flip/02-capture.png,889,1770
+01-flip,3,Review extracted tasks,01-flip/03-review.png,889,1769
+01-flip,4,Task deck / motion start,01-flip/04-deck.png,889,1770
+01-flip,5,Swipe right / commitment keyframe,01-flip/05-swipe-right.png,889,1769
+01-flip,6,Commitment / match payoff,01-flip/06-commit.png,887,1772
+01-flip,7,Swipe left / defer keyframe,01-flip/07-swipe-left.png,889,1770
+01-flip,8,Reschedule / sheet settled,01-flip/08-reschedule.png,888,1771
+01-flip,9,Focus / timer active,01-flip/09-focus.png,888,1771
+01-flip,10,Confirm completed work,01-flip/10-completion-review.png,886,1775
+01-flip,11,Completion / reward keyframe,01-flip/11-celebrate.png,889,1770
+01-flip,12,Invite one buddy,01-flip/12-buddy.png,888,1770
+01-flip,13,Duo / shared weekly challenge,01-flip/13-duo.png,888,1772
+01-flip,14,Activity / completed and slipping tasks,01-flip/14-activity.png,889,1770
+01-flip,15,How it works / live run,01-flip/15-flow-live.png,889,1770
+01-flip,16,How it works / step inspector,01-flip/16-step-detail.png,889,1768
+01-flip,17,How it works / timeout and fallback,01-flip/17-recovery.png,888,1772
+01-flip,18,How it works / stored replay,01-flip/18-replay.png,888,1771
+01-flip,19,Offline / durable local queue,01-flip/19-offline.png,889,1770
+01-flip,20,Lock screen / future native companion,01-flip/20-lockscreen.png,888,1771
+02-orbit,1,Welcome / empty state,02-orbit/01-welcome.png,888,1771
+02-orbit,2,Capture messy notes,02-orbit/02-capture.png,888,1771
+02-orbit,3,Review extracted tasks,02-orbit/03-review.png,887,1774
+02-orbit,4,Task deck / motion start,02-orbit/04-deck.png,887,1774
+02-orbit,5,Swipe right / commitment keyframe,02-orbit/05-swipe-right.png,887,1774
+02-orbit,6,Commitment / match payoff,02-orbit/06-commit.png,888,1772
+02-orbit,7,Swipe left / defer keyframe,02-orbit/07-swipe-left.png,887,1774
+02-orbit,8,Reschedule / sheet settled,02-orbit/08-reschedule.png,887,1774
+02-orbit,9,Focus / timer active,02-orbit/09-focus.png,887,1774
+02-orbit,10,Confirm completed work,02-orbit/10-completion-review.png,887,1774
+02-orbit,11,Completion / reward keyframe,02-orbit/11-celebrate.png,889,1770
+02-orbit,12,Invite one buddy,02-orbit/12-buddy.png,886,1775
+02-orbit,13,Duo / shared weekly challenge,02-orbit/13-duo.png,887,1774
+02-orbit,14,Activity / completed and slipping tasks,02-orbit/14-activity.png,889,1770
+02-orbit,15,How it works / live run,02-orbit/15-flow-live.png,888,1770
+02-orbit,16,How it works / step inspector,02-orbit/16-step-detail.png,888,1771
+02-orbit,17,How it works / timeout and fallback,02-orbit/17-recovery.png,887,1774
+02-orbit,18,How it works / stored replay,02-orbit/18-replay.png,888,1771
+02-orbit,19,Offline / durable local queue,02-orbit/19-offline.png,888,1771
+02-orbit,20,Lock screen / future native companion,02-orbit/20-lockscreen.png,887,1774
+03-folio,1,Welcome / empty state,03-folio/01-welcome.png,887,1774
+03-folio,2,Capture messy notes,03-folio/02-capture.png,889,1770
+03-folio,3,Review extracted tasks,03-folio/03-review.png,888,1770
+03-folio,4,Task deck / motion start,03-folio/04-deck.png,888,1771
+03-folio,5,Swipe right / commitment keyframe,03-folio/05-swipe-right.png,888,1771
+03-folio,6,Commitment / match payoff,03-folio/06-commit.png,888,1771
+03-folio,7,Swipe left / defer keyframe,03-folio/07-swipe-left.png,888,1771
+03-folio,8,Reschedule / sheet settled,03-folio/08-reschedule.png,888,1771
+03-folio,9,Focus / timer active,03-folio/09-focus.png,888,1770
+03-folio,10,Confirm completed work,03-folio/10-completion-review.png,889,1769
+03-folio,11,Completion / reward keyframe,03-folio/11-celebrate.png,889,1770
+03-folio,12,Invite one buddy,03-folio/12-buddy.png,889,1770
+03-folio,13,Duo / shared weekly challenge,03-folio/13-duo.png,889,1770
+03-folio,14,Activity / completed and slipping tasks,03-folio/14-activity.png,888,1771
+03-folio,15,How it works / live run,03-folio/15-flow-live.png,888,1771
+03-folio,16,How it works / step inspector,03-folio/16-step-detail.png,888,1771
+03-folio,17,How it works / timeout and fallback,03-folio/17-recovery.png,888,1771
+03-folio,18,How it works / stored replay,03-folio/18-replay.png,889,1770
+03-folio,19,Offline / durable local queue,03-folio/19-offline.png,888,1771
+03-folio,20,Lock screen / future native companion,03-folio/20-lockscreen.png,888,1771

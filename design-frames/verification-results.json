@@ -1,0 +1,22 @@
+{
+  "total_pngs": 60,
+  "per_version": {
+    "01-flip": 20,
+    "02-orbit": 20,
+    "03-folio": 20
+  },
+  "unique_image_hashes": 60,
+  "png_decode": "passed",
+  "original_pixels_preserved": true,
+  "local_html_links_checked": 134,
+  "broken_local_links": 0,
+  "width_range": [
+    886,
+    889
+  ],
+  "height_range": [
+    1768,
+    1775
+  ],
+  "total_png_bytes": 88682069
+}

@@ -1,0 +1,13 @@
+**/node_modules/
+**/dist/
+**/.env
+**/.env.*
+!**/.env.example
+**/data/
+**/*.tsbuildinfo
+**/coverage/
+**/test-results/
+hqpixels-key-*.png
+
+# Packaged copies of the source and design assets
+/*.zip

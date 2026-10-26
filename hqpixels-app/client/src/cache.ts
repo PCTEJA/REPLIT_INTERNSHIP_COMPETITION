@@ -1,0 +1,5 @@
+function database():Promise<IDBDatabase>{return new Promise((resolve,reject)=>{const r=indexedDB.open('hqpixels-drafts',1);r.onupgradeneeded=()=>r.result.createObjectStore('notes');r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error);});}
+export async function localNote(userId:string,value?:string):Promise<string>{
+  const db=await database();try{return await new Promise((resolve,reject)=>{const tx=db.transaction('notes',value===undefined?'readonly':'readwrite');const store=tx.objectStore('notes');let answer='';const r=value===undefined?store.get(userId):store.put(value,userId);r.onsuccess=()=>{answer=value===undefined?(r.result||''):value;};tx.oncomplete=()=>resolve(answer);tx.onerror=()=>reject(tx.error);});}finally{db.close();}
+}
+export async function clearLocalNote(userId:string){const db=await database();try{await new Promise<void>((resolve,reject)=>{const tx=db.transaction('notes','readwrite');tx.objectStore('notes').delete(userId);tx.oncomplete=()=>resolve();tx.onerror=()=>reject(tx.error);});}finally{db.close();}}

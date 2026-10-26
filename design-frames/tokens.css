@@ -1,0 +1,59 @@
+/* Design starter tokens. Rebuild screens as accessible components; PNGs are references. */
+:root {
+  --space-1: .25rem; --space-2: .5rem; --space-3: .75rem; --space-4: 1rem;
+  --space-6: 1.5rem; --space-8: 2rem; --space-12: 3rem;
+  --screen-inline: 1.5rem; --touch-min: 3rem; --button-height: 3.5rem;
+  --radius-sm: .75rem; --radius-md: 1rem; --radius-card: 1.75rem;
+  --radius-sheet: 2rem; --radius-pill: 999px;
+  --font-body: Inter, ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-body);
+  --text-body: 1rem; --text-caption: .875rem;
+  --text-heading: clamp(1.75rem, 7vw, 2.25rem);
+  --ease-out: cubic-bezier(.22,1,.36,1);
+  --motion-press: 120ms; --motion-fast: 160ms; --motion-sheet: 240ms;
+  --shadow-card: 0 2px 4px rgb(33 29 26 / .04), 0 12px 32px rgb(33 29 26 / .09);
+}
+[data-design="flip"] {
+  color-scheme: light;
+  --canvas: #FFF8EE; --surface: #FFFCF6; --raised: #F3E9DD;
+  --ink: #26221F; --muted: #655D55; --border: #D9CCBD;
+  --primary: #B94326; --on-primary: #FFF8EE; --focus: #7E2F1D;
+  --art-card: #FFCB85; --support: #D8E5D5;
+  --success: #275B3D; --warning: #835000; --danger: #B42325;
+  --font-display: Satoshi, Inter, ui-sans-serif, system-ui, sans-serif;
+}
+[data-design="orbit"] {
+  color-scheme: dark;
+  --canvas: #10151D; --surface: #1A2330; --raised: #253142;
+  --ink: #F1F6F5; --muted: #AAB8C6; --border: #4E6278;
+  --primary: #B9E8CE; --on-primary: #10151D; --focus: #B6BFF5;
+  --art-card: #1A2330; --support: #B6BFF5;
+  --success: #B9E8CE; --warning: #F5C477; --danger: #FFB4AB;
+  --radius-card: 1.5rem; --shadow-card: inset 0 1px 0 rgb(255 255 255 / .08);
+  --font-display: Geist, Inter, ui-sans-serif, system-ui, sans-serif;
+}
+[data-design="folio"] {
+  color-scheme: light;
+  --canvas: #F6F2E9; --surface: #FFFCF5; --raised: #EBE5D7;
+  --ink: #173C32; --muted: #5B665E; --border: #C6CBBE;
+  --primary: #173C32; --on-primary: #F6F2E9; --focus: #8E3B25;
+  --art-card: #FFFCF5; --support: #E8DCA9; --terracotta: #B45536;
+  --success: #275B3D; --warning: #835000; --danger: #A32929;
+  --radius-card: 1rem; --font-display: Fraunces, Georgia, serif;
+}
+.app-surface { background: var(--canvas); color: var(--ink); font-family: var(--font-body); }
+.app-surface h1, .app-surface h2 { font-family: var(--font-display); letter-spacing: -.03em; line-height: 1.1; }
+.app-surface button, .app-surface input, .app-surface textarea { font: inherit; }
+.app-surface input, .app-surface textarea { font-size: max(16px, 1rem); }
+.action { min-height: var(--button-height); padding: .75rem 1.5rem; border-radius: var(--radius-pill); border: 1px solid transparent; font-weight: 600; }
+.action-primary { background: var(--primary); color: var(--on-primary); }
+.action-secondary { background: var(--surface); color: var(--ink); border-color: currentColor; }
+.action:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+.action[aria-busy="true"] { min-width: var(--button-idle-width, auto); }
+.touch-control { min-width: var(--touch-min); min-height: var(--touch-min); }
+.task-card { border-radius: var(--radius-card); background: var(--surface); box-shadow: var(--shadow-card); }
+.tabular { font-variant-numeric: tabular-nums; }
+.safe-bottom { padding-bottom: max(1rem, env(safe-area-inset-bottom)); }
+/* Font family names are choices, not bundled font licenses/files. Load chosen licensed fonts. */
+/* Validate rendered borders separately: subtle dividers do not replace visible control boundaries. */
+

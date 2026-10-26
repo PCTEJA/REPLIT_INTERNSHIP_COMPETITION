@@ -1,0 +1,17 @@
+/* FLIP-derived HQPIXELS starter tokens. Verify actual rendered contrast and font licenses. */
+:root,[data-design="hqpixels"] {
+  color-scheme:light;
+  --canvas:#FFF8EE; --surface:#FFFCF6; --raised:#F3E9DD;
+  --ink:#26221F; --muted:#655D55; --border:#D9CCBD;
+  --primary:#B94326; --on-primary:#FFF8EE; --focus:#7E2F1D;
+  --art-card:#FFCB85; --support:#D8E5D5;
+  --success:#275B3D; --warning:#835000; --danger:#B42325;
+  --font-body:Inter,"Segoe UI",system-ui,sans-serif;
+  --font-display:Satoshi,Inter,"Segoe UI",system-ui,sans-serif;
+  --radius-card:1.75rem; --radius-pill:999px;
+  --space-1:.25rem; --space-2:.5rem; --space-3:.75rem;
+  --space-4:1rem; --space-6:1.5rem; --space-8:2rem;
+  --touch-min:3rem; --button-height:3.5rem;
+  --shadow-card:0 2px 4px rgb(33 29 26 / .04),0 12px 32px rgb(33 29 26 / .09);
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}

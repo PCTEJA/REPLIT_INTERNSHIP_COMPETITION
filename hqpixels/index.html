@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#B94326">
+  <title>HQPIXELS — FLIP design & voice-first project</title>
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+  <header class="masthead">
+    <a class="brand" href="#top" aria-label="HQPIXELS home"><img src="assets/hqpixels-logo.png" alt="HQPIXELS with HQ monogram" width="2172" height="724"></a>
+    <span class="tag">FLIP DESIGN · PROJECT DRAFT</span>
+  </header>
+  <main id="top">
+    <section class="hero" aria-labelledby="headline">
+      <div class="hero-copy"><p class="eyebrow">A LITTLE LESS ENTRY. A LITTLE MORE DOING.</p>
+      <h1 id="headline">Say it.<br>Shape it.<br><span>Start it.</span></h1>
+      <p class="lead">Your thoughts become a plan you control. Speak your tasks, refine them together, then save the whole batch.</p>
+      <div class="actions"><a class="button" href="PROJECT-BRIEF.md">Read the project brief <span aria-hidden="true">↗</span></a><a class="text-link" href="#screens">Explore the new screens ↓</a></div>
+      <p class="caption">HQPIXELS · “HQ” for short · Warm, playful FLIP styling</p></div>
+      <figure class="hero-frame"><a href="assets/01-welcome.png" aria-label="Open the full HQPIXELS welcome PNG"><img src="assets/01-welcome.png" alt="HQPIXELS welcome screen with warm paper cards and Speak my tasks action" width="887" height="1774"></a><figcaption>01 / A familiar design. A new name.</figcaption></figure>
+    </section>
+    <section class="flow" aria-label="Task creation flow">
+      <article><span class="number">01</span><h2>Speak naturally.</h2><p>One task or a whole day. Typing is always an option.</p></article>
+      <article><span class="number">02</span><h2>Make it yours.</h2><p>Review the draft. Say what to change, remove or add.</p></article>
+      <article><span class="number">03</span><h2>Confirm once.</h2><p>Save the reviewed batch. Start a task by saying its name.</p></article>
+    </section>
+    <section id="screens" class="screens" aria-labelledby="screens-title">
+      <div class="section-heading"><div><p class="eyebrow">THE CORE JOURNEY</p><h2 id="screens-title">Less tapping.<br>Still your call.</h2></div><p>Four updated PNG screens preserve the FLIP look. Open any image for its original export.</p></div>
+      <div class="screen-grid">
+        <figure><a href="assets/01-welcome.png"><img src="assets/01-welcome.png" alt="Welcome screen: Speak my tasks or I’d rather type" loading="lazy" width="887" height="1774"></a><figcaption><strong>01 / Welcome</strong><span>Choose voice or typing.</span></figcaption></figure>
+        <figure><a href="assets/02-voice-capture.png"><img src="assets/02-voice-capture.png" alt="Recording screen with waveform, timer, Stop and review, and Cancel recording" loading="lazy" width="889" height="1770"></a><figcaption><strong>02 / Say it all</strong><span>Record a short turn, then review.</span></figcaption></figure>
+        <figure><a href="assets/03-draft-review.png"><img src="assets/03-draft-review.png" alt="Three candidate tasks with Speak a change, Read my draft and Save 3 tasks controls" loading="lazy" width="889" height="1770"></a><figcaption><strong>03 / Sound right?</strong><span>Correct the draft and confirm the batch.</span></figcaption></figure>
+        <figure><a href="assets/04-voice-selection.png"><img src="assets/04-voice-selection.png" alt="HQPIXELS task deck with Pick a task by voice and the essay task card" loading="lazy" width="889" height="1770"></a><figcaption><strong>04 / Make a start</strong><span>Speak, swipe or tap to choose.</span></figcaption></figure>
+      </div>
+    </section>
+    <section class="conversation" aria-labelledby="conversation-title">
+      <div><p class="eyebrow">WHAT IT FEELS LIKE</p><h2 id="conversation-title">A plan.<br>In your words.</h2><p>A sample conversation from the proposed app. These messages illustrate behavior; this gallery does not record audio or call Google.</p></div>
+      <div class="dialogue"><div class="bubble user"><span>You</span><p>Outline my essay for tomorrow, email my tutor, and book a study room.</p></div><div class="bubble assistant"><span>HQ</span><p>Three tasks drafted. The essay is due tomorrow; the others are unscheduled. Want to change anything?</p></div><div class="bubble user"><span>You</span><p>Move the essay to Friday.</p></div><div class="bubble assistant"><span>HQ</span><p>Updated to Friday, October 30. Save these three tasks?</p></div><div class="bubble user"><span>You</span><p>Save all three.</p></div><p class="caption">Illustrative context: October 26, 2026 · America/Chicago</p></div>
+    </section>
+    <section class="handoff" aria-labelledby="handoff-title">
+      <div class="section-heading"><div><p class="eyebrow">READY FOR IMPLEMENTATION</p><h2 id="handoff-title">The whole project,<br>written down.</h2></div><p>Google-powered understanding, human-reviewed tasks, and clear build milestones.</p></div>
+      <div class="document-grid">
+        <a href="PROJECT-BRIEF.md"><span>01 / PRODUCT & ENGINEERING</span><h3>Project brief ↗</h3><p>Voice behavior, Google setup, architecture, data model, recovery and release gates.</p></a>
+        <a href="BUILD-BACKLOG.md"><span>02 / DELIVERY PLAN</span><h3>24 build tasks ↗</h3><p>Priorities, dependencies and concrete acceptance checks for the implementation.</p></a>
+        <a href="REPLIT-BUILD-PROMPT.md"><span>03 / START BUILDING</span><h3>Replit build prompt ↗</h3><p>A cohesive implementation brief to use with these assets and specifications.</p></a>
+      </div>
+      <aside class="google-note"><h3>About Google API access</h3><p>The plan uses Gemini for recorded audio and task interpretation, plus optional Google speech read-back. Free API tiers have quotas. AI Pro interface benefits and API billing are separate; eligible monthly Cloud credits must be checked in your account.</p><a href="https://ai.google.dev/gemini-api/docs/google-ai-plans" target="_blank" rel="noopener noreferrer">Google’s subscription and API guidance ↗</a></aside>
+    </section>
+  </main>
+  <footer><p><strong>Design and project draft complete.</strong> The application and live Google integration remain to be built.</p><div><a href="assets/hqpixels-logo.png" download>Download logo PNG</a><a href="generation-log.json">Image prompts</a><a href="tokens.css">Design tokens</a><a href="verification.json">Verification</a></div></footer>
+</body>
+</html>

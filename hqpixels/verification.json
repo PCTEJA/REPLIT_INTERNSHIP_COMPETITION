@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "selected_design": "FLIP",
+  "brand": "HQPIXELS",
+  "short_mark": "HQ",
+  "png_count": 5,
+  "png_decode": "passed",
+  "assets": [
+    {
+      "file": "assets/01-welcome.png",
+      "width": 887,
+      "height": 1774,
+      "mode": "RGB",
+      "sha256": "5ef9c428718669555cf3c1ec558060046b046bfcd1a98ed081753f76493732ad"
+    },
+    {
+      "file": "assets/02-voice-capture.png",
+      "width": 889,
+      "height": 1770,
+      "mode": "RGB",
+      "sha256": "3d3c20a6a69bd73cc74f2f52c32d5e7df2200f6faa750b338f61d9421ddff6fa"
+    },
+    {
+      "file": "assets/03-draft-review.png",
+      "width": 889,
+      "height": 1768,
+      "mode": "RGB",
+      "sha256": "173924e8ae12917556474b09f9b7f052f3ad3d43c716ad4e5c2a091ad891611a"
+    },
+    {
+      "file": "assets/04-voice-selection.png",
+      "width": 889,
+      "height": 1770,
+      "mode": "RGB",
+      "sha256": "6bca3c4bb01c3af104a759b11d0c47555b3c1a51580fb7e6870d6dd6d2d00e30"
+    },
+    {
+      "file": "assets/hqpixels-logo.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGBA",
+      "sha256": "326fe7435caf0ef40899230f4f1d86721102f4101bfd23dd47681e634e631f9d",
+      "real_transparency": true
+    }
+  ],
+  "gallery_visual_review": "Viewed in Codex browser; image text and core layouts visually inspected",
+  "application_implemented": false,
+  "live_google_api_tested": false,
+  "local_links_checked": 21,
+  "broken_local_links": 0
+}

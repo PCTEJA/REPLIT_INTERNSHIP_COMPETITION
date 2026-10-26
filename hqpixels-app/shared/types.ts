@@ -1,0 +1,11 @@
+export type Candidate = { id: string; title: string; dueDate: string | null; duration: number | null; note: string; question: string; excluded: boolean };
+export type Draft = { id: string; revision: number; transcript: string; tasks: Candidate[]; status: 'draft' | 'saved'; source: 'manual' | 'google'; createdAt: string; updatedAt: string; history: Candidate[][]; runId: string; message: string };
+export type Task = Candidate & { status: 'ready' | 'done' | 'archived'; version: number; createdAt: string; completedAt: string | null; draftId: string };
+export type RunEvent = { sequence: number; step: string; state: 'running' | 'success' | 'error'; at: string; durationMs: number; summary: string; origin: 'server' | 'client' };
+export type Run = { id: string; type: 'capture' | 'correction' | 'commit' | 'action' | 'query'; status: 'running' | 'success' | 'error' | 'canceled'; createdAt: string; events: RunEvent[]; draftId?: string; error?: string; result?: unknown };
+export type Confirmation = { token: string; draftId: string; revision: number; hash: string; expires: number };
+export type Operation = { id: string; hash: string; result: unknown };
+export type Workspace = { drafts: Draft[]; tasks: Task[]; runs: Run[]; confirmations: Confirmation[]; operations: Operation[]; timezone: string };
+export type User = { id: string; name: string; email: string; guest: boolean };
+export type Config = { google: boolean; tts: boolean; storage: string; production: boolean };
+export type Snapshot = { user: User; csrf: string; drafts: Draft[]; tasks: Task[]; runs: Run[]; timezone: string; config: Config };

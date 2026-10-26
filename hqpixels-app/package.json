@@ -1,0 +1,43 @@
+{
+  "name": "hqpixels",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {"node": ">=22.13.0"},
+  "scripts": {
+    "dev": "tsx watch server/index.ts",
+    "build": "tsc --noEmit && vite build && esbuild server/index.ts --bundle --platform=node --format=esm --packages=external --outfile=dist/server.js",
+    "start": "node dist/server.js",
+    "check": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts"
+  },
+  "dependencies": {
+    "@fontsource-variable/dm-sans": "^5.2.8",
+    "@fontsource-variable/outfit": "^5.2.8",
+    "@google/genai": "^1.30.0",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "lucide-react": "^0.468.0",
+    "pg": "^8.16.3",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.9",
+    "@types/express": "^5.0.3",
+    "@types/node": "^22.19.0",
+    "@types/pg": "^8.15.5",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@types/supertest": "^6.0.3",
+    "@vitejs/plugin-react": "^4.7.0",
+    "esbuild": "^0.25.12",
+    "supertest": "^7.1.4",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vite": "^6.4.1"
+  }
+}

@@ -1,0 +1,18 @@
+/* Motion reference, not the task state machine. Persist real mutations in application code. */
+.action { transition: transform 120ms cubic-bezier(.22,1,.36,1), background-color 160ms ease-out; }
+.action:active:not(:disabled) { transform: scale(.98); }
+.swipe-card { touch-action: pan-y; transform: translateX(var(--drag-x, 0px)) rotate(var(--drag-angle, 0deg)); }
+.swipe-card[data-dragging="true"] { transition: none; }
+.swipe-card[data-settling="true"] { transition: transform 240ms cubic-bezier(.22,1,.36,1); }
+.sheet[data-entering="true"] { animation: sheet-in 240ms cubic-bezier(.22,1,.36,1) both; }
+.reward[data-entering="true"] { animation: reward-in 360ms cubic-bezier(.22,1,.36,1) both; }
+@keyframes sheet-in { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes reward-in { from { opacity: 0; transform: scale(.94) translateY(8px); } to { opacity: 1; transform: scale(1) translateY(0); } }
+@media (hover: hover) and (pointer: fine) { .action:hover:not(:disabled) { filter: brightness(1.04); } }
+@media (prefers-reduced-motion: reduce) {
+  .action, .swipe-card, .sheet, .reward { animation: none !important; transition: none !important; }
+  .action:active:not(:disabled) { transform: none; }
+  .swipe-card { transform: translateX(var(--drag-x, 0px)); }
+  .decorative-particles { display: none; }
+}
+

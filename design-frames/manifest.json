@@ -1,0 +1,579 @@
+{
+  "created": "2026-10-25",
+  "scope": "60 mobile UI concept images and selected motion keyframes; not a functioning app or continuous animation sequence",
+  "generator": "Built-in image_gen",
+  "recommended": "01-flip",
+  "logicalDesignTarget": {
+    "width": 390,
+    "height": 844,
+    "unit": "CSS pixels",
+    "note": "Original raster dimensions vary; see image-inventory.json."
+  },
+  "designs": [
+    {
+      "id": "01-flip",
+      "name": "Flip",
+      "style": "Warm social editorial playful premium. Canvas warm ivory #FFF8EE; ink #26221F; signature burnt vermilion #B94326 primary with ivory text; sunny apricot #FFCB85 task card; muted sage #D8E5D5 support. Enormous confident rounded grotesk headlines (like Satoshi), ultra-clean sans body. Tactile thick paper cards with 28px corners, tiny inset top highlights, subtle soft shadows. Distinctive flat curved-arrow symbol, a few restrained abstract sticker cutouts; no childish cartoon faces. Feeling: the beautiful next generation of a social productivity app, energetic and witty, with deliberate whitespace.",
+      "referenceFile": "01-flip/04-deck.png",
+      "frameCount": 20
+    },
+    {
+      "id": "02-orbit",
+      "name": "Orbit",
+      "style": "Premium dark precision with beautiful instrument-panel restraint. Canvas graphite navy #10151D; cards #1A2330; raised surfaces #253142; off-white #F1F6F5 text; readable muted #AAB8C6; signature pale mint #B9E8CE buttons with very dark ink; small icy lavender accent #B6BFF5. Precise geometric sans like Geist, tabular timer numerals, 1px fine luminous borders, 24px card corners, no rainbow gradients. A single sculptural matte metal orbital ring as restrained hero art, and fine orbital paths in non-text areas. Crisp, high craft, expensive calm technology rather than a game HUD.",
+      "referenceFile": "02-orbit/04-deck.png",
+      "frameCount": 20
+    },
+    {
+      "id": "03-folio",
+      "name": "Folio",
+      "style": "Premium warm editorial meets playful stationery. Canvas uncoated cream #F6F2E9; card warm white #FFFCF5; deep forest ink #173C32; muted olive-gray #5B665E; primary dark forest #173C32 with cream label; decorative terracotta #B45536 and pale butter #E8DCA9. Expressive high-contrast editorial serif large headings like Fraunces, paired with very clean sans body like Manrope. Thin ruled dividers, sculptural folded paper bookmarks, paper tabs, 16px card corners, refined marginal numbering, almost imperceptible paper grain. Spacious, literary, quirky without visual clutter; a beautiful high-end paper planner made interactive.",
+      "referenceFile": "03-folio/04-deck.png",
+      "frameCount": 20
+    }
+  ],
+  "frames": [
+    {
+      "n": 1,
+      "slug": "welcome",
+      "title": "Welcome / empty state",
+      "spec": "No bottom tabs. Small brand wordmark near top, quiet \"01 / 03\" onboarding indicator. Oversized headline \"Meet your next small win.\" Subheading \"Turn the messy stuff into a doable day.\" Central sculptural composition of two task cards joining with an abstract loop, following the reference brand art. Three tiny labeled benefit rows: \"Capture the chaos\", \"Pick one thing\", \"Win with a friend\". Primary bottom button \"Make my first deck\"; secondary text \"Try a sample\". Polished empty state with plenty of whitespace."
+    },
+    {
+      "n": 2,
+      "slug": "capture",
+      "title": "Capture messy notes",
+      "spec": "Header back button and \"Brain dump\". Large heading \"Drop it all here.\" Subheading \"Messy is a perfectly good start.\" Large input card with visible field label \"Your notes\" and readable sample text \"Outline the essay for tomorrow. Email my tutor. Book the study room.\" Quiet \"Saved on this device\" with cloud-outline icon. Below, a compact optional settings row \"Time today\" with \"45 min\" chosen. Bottom primary \"Build my deck\", secondary \"Use sample notes\". No keyboard, no tabs, no AI magic cliché."
+    },
+    {
+      "n": 3,
+      "slug": "review",
+      "title": "Review extracted tasks",
+      "spec": "Header back arrow and \"Your draft\". Large heading \"Chaos, translated.\" Subheading \"3 tasks selected for your deck.\" Three numbered editable rows (not completion checkboxes), labeled \"01\", \"02\", \"03\": \"Outline the essay\" / \"25 min · Tomorrow\"; \"Email my tutor\" / \"5 min · Today\"; \"Book the study room\" / \"10 min · Unscheduled\". Third row has inline outlined \"Add date\" action. Each task has a small edit pencil. Text \"You can add a date later.\" Bottom primary \"Save 3 tasks\" and quiet \"Edit notes\". No bottom tabs, no large decorative hero. This is selection and review, no tasks completed yet."
+    },
+    {
+      "n": 4,
+      "slug": "deck",
+      "title": "Task deck / motion start",
+      "spec": "Screen 04 / Task deck resting. Top status time \"9:41\", compact brand wordmark, tiny initials avatar \"JD\". Eyebrow \"MONDAY, OCT 26\". Large heading \"A little less later.\" Small subline \"3 tasks. One good start.\" A compact duo strip \"You + Maya\" and \"2 / 5 this week\", tiny paired circle avatars. Main dominant stacked task card, beautiful abstract brand motif in upper third, spacious text below: small tag \"STUDY · 25 MIN\", large task title \"Outline the essay\", subtitle \"Start with three good points.\", metadata \"Due tomorrow\" and \"01 / 03\". Beneath card clear thumb-zone actions: outlined \"Later\" with curved left arrow, filled primary \"Let’s do it\" with right arrow. Below quiet \"Swipe or tap to choose\". Four-item bottom navigation with Deck active. Keep the complete main card in frame and all text horizontal."
+    },
+    {
+      "n": 5,
+      "slug": "swipe-right",
+      "title": "Swipe right / commitment keyframe",
+      "spec": "Use the reference deck composition almost exactly, including header \"A little less later.\", duo strip \"You + Maya\", and fixed bottom nav Deck active. Show one motion keyframe: the front task card \"Outline the essay\" has moved RIGHT about 65px in logical units and rotated clockwise 7 degrees; its right edge may leave screen, revealing a second card titled \"Email my tutor\". Clear prominent stamp \"LET’S DO IT\" near top of moving card, with a directional arrow. The card is being dragged, not completed. Bottom actions \"Later\" and \"Let’s do it\" remain in their original positions, primary softly pressed. No hands, no motion blur, no extra ghost copies."
+    },
+    {
+      "n": 6,
+      "slug": "commit",
+      "title": "Commitment / match payoff",
+      "spec": "No tabs during focused choice. Small top \"Added to today\" with check icon. Big expressive heading \"It’s a match.\" Subheading \"You + one small step.\" Centered task card for \"Outline the essay\" with compact abstract motif from reference, metadata \"25 min · Due tomorrow\", and a small duo chip \"Maya is cheering you on\". A short three-step checklist: \"Pick a point\", \"Add three bullets\", \"Wrap it up\". Bottom filled \"Start 25 minutes\", quiet outlined \"Choose another\". Tiny undo link \"Changed your mind? Undo\". This is commitment, not task completion."
+    },
+    {
+      "n": 7,
+      "slug": "swipe-left",
+      "title": "Swipe left / defer keyframe",
+      "spec": "Use reference deck layout with header \"A little less later.\", duo strip, Deck active tabs, and two bottom action buttons unchanged. Front card titled \"Email my tutor\" with metadata \"5 min · Due today\" shifted LEFT 65 logical px and rotated counterclockwise 7 degrees; left edge may leave screen. Top of moving card shows clear warm stamp \"NOT NOW\". Reveal next centered task \"Book the study room\". Small helper \"Make room. Keep the task.\" The Later outlined action is subtly pressed. No red rejection X, no deletion, no hands or motion blur."
+    },
+    {
+      "n": 8,
+      "slug": "reschedule",
+      "title": "Reschedule / sheet settled",
+      "spec": "Deck dimmed behind an elegant bottom sheet occupying lower 65 percent with visible rounded top corners and drag handle. Sheet headline \"Later is a plan.\" Subline \"Email my tutor · 5 min\". Three large radio rows \"This afternoon · 4:00 PM\", \"Tomorrow · 9:00 AM\", \"Pick a time\". First selected with check and outline. Subtle note \"We’ll bring it back to your deck.\" Bottom primary \"Move to 4 PM\"; secondary \"Keep it today\". Small close affordance at top. Clear readable opaque sheet, subtle scrim, no transparent text overlap."
+    },
+    {
+      "n": 9,
+      "slug": "focus",
+      "title": "Focus / timer active",
+      "spec": "Dedicated focus view, no bottom tabs. Top back arrow and \"FOCUS SESSION\". Large title \"Outline the essay\". Very large beautifully typeset tabular timer \"18:42\" inside an elegant thin circular progress arc, on-brand abstract art tucked behind its edge without touching text. Label \"of 25 minutes\". Compact companion line \"Maya is focusing too\" with two initials avatars. Below, one next-step card \"Your next step\" / \"Add three bullet points.\" Bottom prominent \"Pause\" and quiet secondary \"Finish early\". No completion claim, no gamification clutter."
+    },
+    {
+      "n": 10,
+      "slug": "completion-review",
+      "title": "Confirm completed work",
+      "spec": "Header \"Wrap up\". Large heading \"Did the thing?\" Subheading \"Small work still counts.\" Task summary \"Outline the essay\" and \"22 minutes of focus\". Three checked rows \"Picked a point\", \"Added three bullets\", \"Saved the outline\". Optional labeled input \"A note for future you\" showing \"Start paragraph one next time.\" Tiny \"Only progress is shared with Maya.\" Bottom filled \"Mark complete\", secondary text \"Keep working\". This is the explicit confirmation before rewards."
+    },
+    {
+      "n": 11,
+      "slug": "celebrate",
+      "title": "Completion / reward keyframe",
+      "spec": "Task completion reward state. Small upper badge \"TASK COMPLETE\". Large joyful headline \"Look at you go.\" Center refined abstract reward medallion in brand style, restrained paper confetti around edges occupying less than 10 percent. Big \"+30 XP\" and label \"For finishing, not just swiping.\" Duo progress panel \"You + Maya\" / \"3 / 5 weekly wins\" with five segmented progress markers, exactly three filled. Body \"Your essay outline is saved.\" Primary bottom \"Next small win\"; secondary \"View activity\". Small \"Undo completion\". No coins, loot boxes, loss penalties or leaderboards."
+    },
+    {
+      "n": 12,
+      "slug": "buddy",
+      "title": "Invite one buddy",
+      "spec": "Duo tab active in exact four-item nav. Header brand and small settings gear. Large heading \"Better with one.\" Subline \"One friend. A little momentum.\" Two generous overlapping circle avatars, \"You\" and empty \"+\" invitation circle, with a fine connecting line. Shared card \"A duo, not a leaderboard\" and two simple rows \"Share progress, not private notes\" / \"Cheer when it helps\". Small privacy choice \"Share task titles\" toggle OFF. Bottom primary \"Create invite link\", text alternative \"I’ll fly solo\". No claim that an invitation was sent."
+    },
+    {
+      "n": 13,
+      "slug": "duo",
+      "title": "Duo / shared weekly challenge",
+      "spec": "Duo tab active. Header \"Your duo\", tiny settings control. Big heading \"Two people. Five small wins.\" Paired initials avatars \"You\" and \"Maya\" connected by an elegant progress arc or paper chain appropriate to brand. Large \"3 / 5\" with \"This week\", five segmented markers exactly three active. Two participant rows \"You · 2 wins\" and \"Maya · 1 win\", equal visual prominence. Small card \"One kind nudge\" with draft text \"One tiny step together?\" Primary \"Send cheer\", quiet \"Invite to focus\". Footer \"No streak penalties. Start again anytime.\""
+    },
+    {
+      "n": 14,
+      "slug": "activity",
+      "title": "Activity / completed and slipping tasks",
+      "spec": "Activity tab active. Header \"Your week\". Large heading \"Progress, with room to breathe.\" Compact metric card \"3 tasks finished\" with exactly three check symbols, and \"This week\". NO BAR CHART. Section titled \"Needs a plan\" with clock icon card \"Email my tutor\", \"Due today\", note \"A five-minute restart?\" and outlined \"Reschedule\". Separate section below titled \"Latest win\", with completed row check \"Outline the essay\" / \"Saved today · +30 XP\". Bottom primary \"Make a small plan\". No filter tab that would incorrectly mix finished and unfinished tasks. Keep all content spacious and readable; no shame, no alarming red."
+    },
+    {
+      "n": 15,
+      "slug": "flow-live",
+      "title": "How it works / live run",
+      "spec": "Flow tab active. Header \"How it works\" with small \"LIVE\" status chip. Large heading \"Watch your deck take shape.\" Small label \"Run 042 · Sample preview\" so mock data is visibly illustrative. A clear vertical CONNECTED DIAGRAM of six compact nodes joined by thin lines with directional arrows, labels and semantic icons: \"Page · Notes received\" with \"68 characters · 12 ms\"; \"Server · Checked input\" with \"3 actions found · 8 ms\"; \"Service · Extracted tasks\" with \"3 tasks · 840 ms\"; \"Server · Ranked tasks\" with \"Running…\"; \"Database · Save tasks\" with \"Waiting\"; \"Page · Show deck\" with \"Waiting\". First 3 nodes checked, 4th active, last 2 neutral. Small footer \"Your notes are safe.\" No fake code, no terminal, no giant hero art."
+    },
+    {
+      "n": 16,
+      "slug": "step-detail",
+      "title": "How it works / step inspector",
+      "spec": "Flow tab active. Top back arrow \"Run 042\". Header \"Step details\". Large title \"Saved 3 drafts\". Pill \"DATABASE · SUCCESS\". Timing row \"42 ms\" and \"Sample preview\". Two clean readable panels: \"Received\" with \"3 extracted tasks\" and exactly these three task rows \"Outline the essay\", \"Email my tutor\", \"Book the study room\"; \"Saved\" with \"3 draft records\" and \"Linked to your account\". Bottom breadcrumb \"Rank tasks → Save drafts → Review deck\". Small callout \"Your draft is available after refresh.\" Primary \"Back to the run\". These tasks await user review; they are not completed or scheduled yet. No other invented task names. No large decorative art."
+    },
+    {
+      "n": 17,
+      "slug": "recovery",
+      "title": "How it works / timeout and fallback",
+      "spec": "Flow tab active. Header \"How it works\" and status \"RECOVERED\". Large headline \"A hiccup. Handled.\" Subheading \"Your notes stayed safe.\" Label \"Run 043 · Sample preview\". Elegant vertical BRANCHING connected diagram: top \"Server · Check input\" checked, next \"Service · Extract tasks\" amber warning \"Timed out · 2.0 s\"; a clearly connected side branch \"Retry once\" / \"Timed out · 2.0 s\" leading to \"Server · Simple parser\" success \"3 draft tasks · 14 ms\"; path rejoins at \"Database · Save draft\" check \"Saved · 42 ms\". Short note \"Review dates before saving your deck.\" Bottom primary \"Review draft\", secondary \"View details\". All timings legible, visible connection arrows; amber exception no catastrophic red screen."
+    },
+    {
+      "n": 18,
+      "slug": "replay",
+      "title": "How it works / stored replay",
+      "spec": "Flow tab active; Deck tab inactive. Header \"Run replay\", small \"RECORDED\" pill. Heading \"Every step, at your pace.\" \"Run 042 · Sample preview\". Show all SIX vertically connected compact diagram nodes, exactly in this order: \"Receive notes\" / \"12 ms\" (complete); \"Check input\" / \"8 ms\" (complete); \"Extract 3 tasks\" / \"840 ms\" (current playback step); \"Rank tasks\" / \"22 ms\" (not yet played); \"Save 3 drafts\" / \"42 ms\" (not yet played); \"Show review deck\" / \"16 ms\" (not yet played). The six rows must fit, with a smaller headline and compact spacing if needed. Playback control panel \"Original run · 0.94 s\", \"Step 3 of 6\", a progress slider, pause button, \"0.5×\" selected, \"1×\", \"2×\". Label \"Playback slows. Recorded times stay true.\" Bottom action \"Replay from start\". No elapsed clock reading or minute:second timestamp. No large decorative art. This is recorded playback, not a new execution."
+    },
+    {
+      "n": 19,
+      "slug": "offline",
+      "title": "Offline / durable local queue",
+      "spec": "Deck tab active. Header small brand. Large heading \"Offline. Still on it.\" Subline \"Your changes are safe on this device.\" Status banner with cloud-slash line icon \"2 changes waiting to sync\". Two queued rows \"Essay marked complete\" and \"Tutor email moved to 4 PM\", each with clock and \"Pending\". Below a restrained sync-path illustration phone → cloud with paused dashed segment. Clear helper \"We’ll sync when you reconnect.\" Primary \"Try sync again\"; quiet \"Keep working\". Small text \"Maya will see updates after sync.\" Never claim saved to server while offline."
+    },
+    {
+      "n": 20,
+      "slug": "lockscreen",
+      "title": "Lock screen / future native companion",
+      "spec": "Create an iOS-style LOCK SCREEN CONCEPT, not the app interior: no bottom app tabs. Top small lock symbol, day \"Monday, October 26\", huge elegant time \"9:41\". Beautiful minimal abstract brand wallpaper from reference with enough calm space for text. Under clock a monochrome rectangular accessory widget showing brand name, \"2 tasks need a plan\", and \"Next · 4:00 PM\". Beside it a circular accessory widget with \"3 / 5\" and tiny \"Duo\". Near lower third a tasteful notification-style panel \"A small reset?\" and \"Open your deck to make a plan.\" Bottom subtle label \"Native companion concept\" and \"Task titles hidden\", home indicator with roomy safe area. Widgets use monochrome high contrast, no private task titles. This is future native scope, not a claim of web functionality."
+    }
+  ],
+  "deliverables": [
+    {
+      "design": "01-flip",
+      "frame": 1,
+      "title": "Welcome / empty state",
+      "file": "01-flip/01-welcome.png",
+      "refined": false
+    },
+    {
+      "design": "01-flip",
+      "frame": 2,
+      "title": "Capture messy notes",
+      "file": "01-flip/02-capture.png",
+      "refined": false
+    },
+    {
+      "design": "01-flip",
+      "frame": 3,
+      "title": "Review extracted tasks",
+      "file": "01-flip/03-review.png",
+      "refined": true
+    },
+    {
+      "design": "01-flip",
+      "frame": 4,
+      "title": "Task deck / motion start",
+      "file": "01-flip/04-deck.png",
+      "refined": false
+    },
+    {
+      "design": "01-flip",
+      "frame": 5,
+      "title": "Swipe right / commitment keyframe",
+      "file": "01-flip/05-swipe-right.png",
+      "refined": false
+    },
+    {
+      "design": "01-flip",
+      "frame": 6,
+      "title": "Commitment / match payoff",
+      "file": "01-flip/06-commit.png",
+      "refined": false
+    },
+    {
+      "design": "01-flip",
+      "frame": 7,
+      "title": "Swipe left / defer keyframe",
+      "file": "01-flip/07-swipe-left.png",
+      "refined": false
+    },
+    {
+      "design": "01-flip",
+      "frame": 8,
+      "title": "Reschedule / sheet settled",
+      "file": "01-flip/08-reschedule.png",
+      "refined": false
+    },
+    {
+      "design": "01-flip",
+      "frame": 9,
+      "title": "Focus / timer active",
+      "file": "01-flip/09-focus.png",
+      "refined": false
+    },
+    {
+      "design": "01-flip",
+      "frame": 10,
+      "title": "Confirm completed work",
+      "file": "01-flip/10-completion-review.png",
+      "refined": false
+    },
+    {
+      "design": "01-flip",
+      "frame": 11,
+      "title": "Completion / reward keyframe",
+      "file": "01-flip/11-celebrate.png",
+      "refined": false
+    },
+    {
+      "design": "01-flip",
+      "frame": 12,
+      "title": "Invite one buddy",
+      "file": "01-flip/12-buddy.png",
+      "refined": false
+    },
+    {
+      "design": "01-flip",
+      "frame": 13,
+      "title": "Duo / shared weekly challenge",
+      "file": "01-flip/13-duo.png",
+      "refined": false
+    },
+    {
+      "design": "01-flip",
+      "frame": 14,
+      "title": "Activity / completed and slipping tasks",
+      "file": "01-flip/14-activity.png",
+      "refined": true
+    },
+    {
+      "design": "01-flip",
+      "frame": 15,
+      "title": "How it works / live run",
+      "file": "01-flip/15-flow-live.png",
+      "refined": false
+    },
+    {
+      "design": "01-flip",
+      "frame": 16,
+      "title": "How it works / step inspector",
+      "file": "01-flip/16-step-detail.png",
+      "refined": true
+    },
+    {
+      "design": "01-flip",
+      "frame": 17,
+      "title": "How it works / timeout and fallback",
+      "file": "01-flip/17-recovery.png",
+      "refined": false
+    },
+    {
+      "design": "01-flip",
+      "frame": 18,
+      "title": "How it works / stored replay",
+      "file": "01-flip/18-replay.png",
+      "refined": true
+    },
+    {
+      "design": "01-flip",
+      "frame": 19,
+      "title": "Offline / durable local queue",
+      "file": "01-flip/19-offline.png",
+      "refined": false
+    },
+    {
+      "design": "01-flip",
+      "frame": 20,
+      "title": "Lock screen / future native companion",
+      "file": "01-flip/20-lockscreen.png",
+      "refined": false
+    },
+    {
+      "design": "02-orbit",
+      "frame": 1,
+      "title": "Welcome / empty state",
+      "file": "02-orbit/01-welcome.png",
+      "refined": false
+    },
+    {
+      "design": "02-orbit",
+      "frame": 2,
+      "title": "Capture messy notes",
+      "file": "02-orbit/02-capture.png",
+      "refined": false
+    },
+    {
+      "design": "02-orbit",
+      "frame": 3,
+      "title": "Review extracted tasks",
+      "file": "02-orbit/03-review.png",
+      "refined": true
+    },
+    {
+      "design": "02-orbit",
+      "frame": 4,
+      "title": "Task deck / motion start",
+      "file": "02-orbit/04-deck.png",
+      "refined": false
+    },
+    {
+      "design": "02-orbit",
+      "frame": 5,
+      "title": "Swipe right / commitment keyframe",
+      "file": "02-orbit/05-swipe-right.png",
+      "refined": false
+    },
+    {
+      "design": "02-orbit",
+      "frame": 6,
+      "title": "Commitment / match payoff",
+      "file": "02-orbit/06-commit.png",
+      "refined": false
+    },
+    {
+      "design": "02-orbit",
+      "frame": 7,
+      "title": "Swipe left / defer keyframe",
+      "file": "02-orbit/07-swipe-left.png",
+      "refined": false
+    },
+    {
+      "design": "02-orbit",
+      "frame": 8,
+      "title": "Reschedule / sheet settled",
+      "file": "02-orbit/08-reschedule.png",
+      "refined": false
+    },
+    {
+      "design": "02-orbit",
+      "frame": 9,
+      "title": "Focus / timer active",
+      "file": "02-orbit/09-focus.png",
+      "refined": false
+    },
+    {
+      "design": "02-orbit",
+      "frame": 10,
+      "title": "Confirm completed work",
+      "file": "02-orbit/10-completion-review.png",
+      "refined": false
+    },
+    {
+      "design": "02-orbit",
+      "frame": 11,
+      "title": "Completion / reward keyframe",
+      "file": "02-orbit/11-celebrate.png",
+      "refined": false
+    },
+    {
+      "design": "02-orbit",
+      "frame": 12,
+      "title": "Invite one buddy",
+      "file": "02-orbit/12-buddy.png",
+      "refined": false
+    },
+    {
+      "design": "02-orbit",
+      "frame": 13,
+      "title": "Duo / shared weekly challenge",
+      "file": "02-orbit/13-duo.png",
+      "refined": false
+    },
+    {
+      "design": "02-orbit",
+      "frame": 14,
+      "title": "Activity / completed and slipping tasks",
+      "file": "02-orbit/14-activity.png",
+      "refined": true
+    },
+    {
+      "design": "02-orbit",
+      "frame": 15,
+      "title": "How it works / live run",
+      "file": "02-orbit/15-flow-live.png",
+      "refined": false
+    },
+    {
+      "design": "02-orbit",
+      "frame": 16,
+      "title": "How it works / step inspector",
+      "file": "02-orbit/16-step-detail.png",
+      "refined": true
+    },
+    {
+      "design": "02-orbit",
+      "frame": 17,
+      "title": "How it works / timeout and fallback",
+      "file": "02-orbit/17-recovery.png",
+      "refined": false
+    },
+    {
+      "design": "02-orbit",
+      "frame": 18,
+      "title": "How it works / stored replay",
+      "file": "02-orbit/18-replay.png",
+      "refined": true
+    },
+    {
+      "design": "02-orbit",
+      "frame": 19,
+      "title": "Offline / durable local queue",
+      "file": "02-orbit/19-offline.png",
+      "refined": false
+    },
+    {
+      "design": "02-orbit",
+      "frame": 20,
+      "title": "Lock screen / future native companion",
+      "file": "02-orbit/20-lockscreen.png",
+      "refined": false
+    },
+    {
+      "design": "03-folio",
+      "frame": 1,
+      "title": "Welcome / empty state",
+      "file": "03-folio/01-welcome.png",
+      "refined": false
+    },
+    {
+      "design": "03-folio",
+      "frame": 2,
+      "title": "Capture messy notes",
+      "file": "03-folio/02-capture.png",
+      "refined": false
+    },
+    {
+      "design": "03-folio",
+      "frame": 3,
+      "title": "Review extracted tasks",
+      "file": "03-folio/03-review.png",
+      "refined": true
+    },
+    {
+      "design": "03-folio",
+      "frame": 4,
+      "title": "Task deck / motion start",
+      "file": "03-folio/04-deck.png",
+      "refined": false
+    },
+    {
+      "design": "03-folio",
+      "frame": 5,
+      "title": "Swipe right / commitment keyframe",
+      "file": "03-folio/05-swipe-right.png",
+      "refined": false
+    },
+    {
+      "design": "03-folio",
+      "frame": 6,
+      "title": "Commitment / match payoff",
+      "file": "03-folio/06-commit.png",
+      "refined": false
+    },
+    {
+      "design": "03-folio",
+      "frame": 7,
+      "title": "Swipe left / defer keyframe",
+      "file": "03-folio/07-swipe-left.png",
+      "refined": false
+    },
+    {
+      "design": "03-folio",
+      "frame": 8,
+      "title": "Reschedule / sheet settled",
+      "file": "03-folio/08-reschedule.png",
+      "refined": false
+    },
+    {
+      "design": "03-folio",
+      "frame": 9,
+      "title": "Focus / timer active",
+      "file": "03-folio/09-focus.png",
+      "refined": false
+    },
+    {
+      "design": "03-folio",
+      "frame": 10,
+      "title": "Confirm completed work",
+      "file": "03-folio/10-completion-review.png",
+      "refined": false
+    },
+    {
+      "design": "03-folio",
+      "frame": 11,
+      "title": "Completion / reward keyframe",
+      "file": "03-folio/11-celebrate.png",
+      "refined": false
+    },
+    {
+      "design": "03-folio",
+      "frame": 12,
+      "title": "Invite one buddy",
+      "file": "03-folio/12-buddy.png",
+      "refined": false
+    },
+    {
+      "design": "03-folio",
+      "frame": 13,
+      "title": "Duo / shared weekly challenge",
+      "file": "03-folio/13-duo.png",
+      "refined": false
+    },
+    {
+      "design": "03-folio",
+      "frame": 14,
+      "title": "Activity / completed and slipping tasks",
+      "file": "03-folio/14-activity.png",
+      "refined": true
+    },
+    {
+      "design": "03-folio",
+      "frame": 15,
+      "title": "How it works / live run",
+      "file": "03-folio/15-flow-live.png",
+      "refined": false
+    },
+    {
+      "design": "03-folio",
+      "frame": 16,
+      "title": "How it works / step inspector",
+      "file": "03-folio/16-step-detail.png",
+      "refined": true
+    },
+    {
+      "design": "03-folio",
+      "frame": 17,
+      "title": "How it works / timeout and fallback",
+      "file": "03-folio/17-recovery.png",
+      "refined": false
+    },
+    {
+      "design": "03-folio",
+      "frame": 18,
+      "title": "How it works / stored replay",
+      "file": "03-folio/18-replay.png",
+      "refined": true
+    },
+    {
+      "design": "03-folio",
+      "frame": 19,
+      "title": "Offline / durable local queue",
+      "file": "03-folio/19-offline.png",
+      "refined": false
+    },
+    {
+      "design": "03-folio",
+      "frame": 20,
+      "title": "Lock screen / future native companion",
+      "file": "03-folio/20-lockscreen.png",
+      "refined": false
+    }
+  ]
+}

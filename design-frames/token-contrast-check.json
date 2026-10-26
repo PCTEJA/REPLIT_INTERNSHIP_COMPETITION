@@ -1,0 +1,125 @@
+{
+  "scope": "Calculated for starter CSS token pairs, not sampled/generated PNG pixels or full accessibility certification.",
+  "checks": [
+    {
+      "design": "Flip",
+      "role": "body / canvas",
+      "foreground": "#26221F",
+      "background": "#FFF8EE",
+      "ratio": 14.96,
+      "passesNormalText": true
+    },
+    {
+      "design": "Flip",
+      "role": "secondary / canvas",
+      "foreground": "#655D55",
+      "background": "#FFF8EE",
+      "ratio": 6.13,
+      "passesNormalText": true
+    },
+    {
+      "design": "Flip",
+      "role": "body / surface",
+      "foreground": "#26221F",
+      "background": "#FFFCF6",
+      "ratio": 15.41,
+      "passesNormalText": true
+    },
+    {
+      "design": "Flip",
+      "role": "secondary / surface",
+      "foreground": "#655D55",
+      "background": "#FFFCF6",
+      "ratio": 6.31,
+      "passesNormalText": true
+    },
+    {
+      "design": "Flip",
+      "role": "button label / fill",
+      "foreground": "#FFF8EE",
+      "background": "#B94326",
+      "ratio": 5.11,
+      "passesNormalText": true
+    },
+    {
+      "design": "Orbit",
+      "role": "body / canvas",
+      "foreground": "#F1F6F5",
+      "background": "#10151D",
+      "ratio": 16.77,
+      "passesNormalText": true
+    },
+    {
+      "design": "Orbit",
+      "role": "secondary / canvas",
+      "foreground": "#AAB8C6",
+      "background": "#10151D",
+      "ratio": 9.05,
+      "passesNormalText": true
+    },
+    {
+      "design": "Orbit",
+      "role": "body / surface",
+      "foreground": "#F1F6F5",
+      "background": "#1A2330",
+      "ratio": 14.5,
+      "passesNormalText": true
+    },
+    {
+      "design": "Orbit",
+      "role": "secondary / surface",
+      "foreground": "#AAB8C6",
+      "background": "#1A2330",
+      "ratio": 7.82,
+      "passesNormalText": true
+    },
+    {
+      "design": "Orbit",
+      "role": "button label / fill",
+      "foreground": "#10151D",
+      "background": "#B9E8CE",
+      "ratio": 13.51,
+      "passesNormalText": true
+    },
+    {
+      "design": "Folio",
+      "role": "body / canvas",
+      "foreground": "#173C32",
+      "background": "#F6F2E9",
+      "ratio": 10.87,
+      "passesNormalText": true
+    },
+    {
+      "design": "Folio",
+      "role": "secondary / canvas",
+      "foreground": "#5B665E",
+      "background": "#F6F2E9",
+      "ratio": 5.36,
+      "passesNormalText": true
+    },
+    {
+      "design": "Folio",
+      "role": "body / surface",
+      "foreground": "#173C32",
+      "background": "#FFFCF5",
+      "ratio": 11.85,
+      "passesNormalText": true
+    },
+    {
+      "design": "Folio",
+      "role": "secondary / surface",
+      "foreground": "#5B665E",
+      "background": "#FFFCF5",
+      "ratio": 5.84,
+      "passesNormalText": true
+    },
+    {
+      "design": "Folio",
+      "role": "button label / fill",
+      "foreground": "#F6F2E9",
+      "background": "#173C32",
+      "ratio": 10.87,
+      "passesNormalText": true
+    }
+  ]
+}
