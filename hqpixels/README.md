@@ -2,6 +2,18 @@
 
 **Selected design: FLIP. Compact mark: HQ.**
 
+<table>
+<tr>
+<td width="33%"><img src="../docs/readme-frames/concept-welcome.png" alt="HQPIXELS welcome concept in an ivory phone frame"></td>
+<td width="33%"><img src="../docs/readme-frames/concept-capture.png" alt="HQPIXELS voice capture concept in an ivory phone frame"></td>
+<td width="33%"><img src="../docs/readme-frames/concept-review.png" alt="HQPIXELS draft review concept in an ivory phone frame"></td>
+</tr>
+</table>
+
+<sub>AI-generated presentation frames of the mobile design concepts. These illustrate the design direction, not implemented mobile screens. Original assets remain in <code>assets/</code>.</sub>
+
+The shared [README frame assets](../docs/readme-frames/) include the [exact generation prompts](../docs/readme-frames/generation-log.json).
+
 Open `index.html` for the visual gallery. This package contains the new logo and four core journey PNGs, plus the full implementation plan. It is a design/specification handoff, not a deployed application.
 
 - `PROJECT-BRIEF.md` — product behavior, voice flow, Google setup, architecture, data/API contract, recovery and release gates.

@@ -2,6 +2,10 @@
 
 HQPIXELS (HQ for short) turns a set of thoughts into reviewable tasks. This local MVP uses the selected FLIP palette and card-based design, with manual entry selected by default.
 
+![HQPIXELS task deck in a warm browser presentation frame](../docs/readme-frames/deck.png)
+
+<sub>AI-styled presentation based on the implemented interface; fine visual details may differ. [Original application screenshots](../docs/screenshots/).</sub>
+
 ## Run locally
 
 Use Node.js 22.13 or newer with `node:sqlite` support. From this folder:

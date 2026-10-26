@@ -13,7 +13,7 @@ React · TypeScript · Express · SQLite / PostgreSQL · Optional Gemini
 
 </div>
 
-![HQPIXELS welcome screen with warm paper tones, illustrated task cards, and workspace sign-up](docs/screenshots/welcome.png)
+![HQPIXELS welcome screen with warm paper tones, illustrated task cards, and workspace sign-up](docs/readme-frames/welcome.png)
 
 ## A little less later.
 
@@ -21,7 +21,7 @@ HQPIXELS is a task workspace built around small, deliberate steps. Get a list ou
 
 Manual mode works without an API key. Optional Google Gemini integration adds recorded voice capture, task interpretation, corrections, spoken lookup, and read-back.
 
-![The working task deck: one task in focus, voice and text lookup, and the full task list](docs/screenshots/deck.png)
+![The working task deck: one task in focus, voice and text lookup, and the full task list](docs/readme-frames/deck.png)
 
 ## From a thought to a first step
 
@@ -31,16 +31,16 @@ Manual mode works without an API key. Optional Google Gemini integration adds re
 <td width="50%"><strong>02 · Make it yours</strong><br>Edit the draft, review the batch, and explicitly confirm what gets saved.</td>
 </tr>
 <tr>
-<td><img src="docs/screenshots/capture.png" alt="Capture screen with three sample notes and a Build my draft button"></td>
-<td><img src="docs/screenshots/review.png" alt="Review screen with editable draft tasks and explicit review and save"></td>
+<td><img src="docs/readme-frames/capture.png" alt="Capture screen with three sample notes and a Build my draft button"></td>
+<td><img src="docs/readme-frames/review.png" alt="Review screen with editable draft tasks and explicit review and save"></td>
 </tr>
 </table>
 
 **03 · One good next step.** Browse or swipe the deck, open focus mode, and start the timer. Completion stays in your hands; history lets you reopen a task.
 
-![Focus mode with one selected task, a count-up timer, and explicit completion](docs/screenshots/focus.png)
+![Focus mode with one selected task, a count-up timer, and explicit completion](docs/readme-frames/focus.png)
 
-<sub>Actual application screenshots captured in a disposable local workspace with fictional sample tasks. Manual mode is shown; voice requires server configuration.</sub>
+<sub>AI-styled presentation previews based on application screenshots with fictional sample tasks. Framing and fine visual details may differ from the running app. Manual mode is shown; voice requires server configuration. <a href="docs/screenshots/">View the original screenshots.</a></sub>
 
 ## What works today
 
@@ -100,13 +100,13 @@ This is an MVP. Physical microphone capture and the PostgreSQL deployment path s
 The implementation follows the selected **FLIP** direction: warm paper, expressive type, playful task cards, and one clear next action.
 
 <details>
-<summary><strong>View the original mobile design concepts</strong></summary>
+<summary><strong>View the framed mobile design concepts</strong></summary>
 <br>
 <table>
 <tr>
-<td width="33%"><img src="hqpixels/assets/01-welcome.png" alt="Original HQPIXELS welcome concept"></td>
-<td width="33%"><img src="hqpixels/assets/02-voice-capture.png" alt="Original voice capture concept"></td>
-<td width="33%"><img src="hqpixels/assets/03-draft-review.png" alt="Original draft review concept"></td>
+<td width="33%"><img src="docs/readme-frames/concept-welcome.png" alt="Original HQPIXELS welcome concept"></td>
+<td width="33%"><img src="docs/readme-frames/concept-capture.png" alt="Original voice capture concept"></td>
+<td width="33%"><img src="docs/readme-frames/concept-review.png" alt="Original draft review concept"></td>
 </tr>
 </table>
 
