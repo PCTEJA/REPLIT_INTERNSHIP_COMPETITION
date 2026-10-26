@@ -26,3 +26,17 @@
   .deck-composer .wave{height:clamp(36px,calc(24dvh - 120px),95px);margin:clamp(10px,2dvh,25px) 0;gap:clamp(3px,1vw,5px)}
   .deck-composer .privacy-copy{margin:12px 0}
 }
+
+/* Let the welcome page grow when the preview, keyboard or text needs more room. */
+.login-layout{height:auto;min-height:100dvh;overflow:visible;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr)}
+.login-story,.login-form,.login-card{min-width:0}
+.login-card{overflow-wrap:anywhere}
+.login-form{padding:clamp(20px,4vw,48px);align-content:center}
+.login-card .secondary{white-space:normal}
+@media(max-width:900px){
+  .login-layout{display:flex;flex-direction:column}
+  .login-story{padding:20px 24px 0;background:var(--canvas);flex-shrink:0}
+  .login-story .wordmark{margin:0;font-size:24px}
+  .login-story h1,.login-story .eyebrow,.login-story .lead,.login-story .paper-art,.login-benefits{display:none}
+  .login-form{flex:1;padding:24px max(16px,env(safe-area-inset-left)) max(24px,env(safe-area-inset-bottom));align-items:center}
+}

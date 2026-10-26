@@ -100,3 +100,22 @@ test('direct deck save is atomic, validated, isolated and safe to retry',async()
     await h.agent.post('/api/tasks/quick').send({...body,operationId:randomUUID()}).expect(403);
   }finally{await h.store.close();}
 });
+
+test('production guest preview creates secure, isolated and reusable sessions',async()=>{
+  const store=new Store(undefined,':memory:');await store.init();
+  const {app}=createApp(store,disabled,true);
+  try{
+    const first=await request(app).post('/api/auth/guest').send({}).expect(200);
+    assert.equal(first.body.user.guest,true);
+    const cookie=first.headers['set-cookie'][0];
+    assert.match(cookie,/HttpOnly/);assert.match(cookie,/Secure/);assert.match(cookie,/SameSite=Lax/);
+    const session=cookie.split(';')[0];
+    const again=await request(app).post('/api/auth/guest').set('Cookie',session).send({}).expect(200);
+    assert.equal(again.body.user.id,first.body.user.id);
+    await request(app).get('/api/state').set('Cookie',session).expect(200);
+    const other=await request(app).post('/api/auth/guest').send({}).expect(200);
+    assert.notEqual(other.body.user.id,first.body.user.id);
+    await request(app).post('/api/auth/guest').set('Sec-Fetch-Site','cross-site').send({}).expect(403);
+    await request(app).get('/api/state').expect(401);
+  }finally{await store.close();}
+});

@@ -45,7 +45,6 @@ export function createApp(store: Store, provider: AIProvider = new GoogleProvide
     if (!['login','register','guest'].includes(action)) return fail(404,'Not found.');
     await store.limit('auth:'+hash(req.socket.remoteAddress || 'local'), 30, 15*60000);
     if (action === 'guest') {
-      if (production) return fail(403,'Create an account to keep your tasks safe across devices.');
       const existing = req.cookies[cookie] ? await store.session(req.cookies[cookie]) : null;
       if (existing) return res.json({ ...existing,config });
       return newSession(await store.createUser('guest-'+randomUUID()+'@local.invalid','You','',true),res);
