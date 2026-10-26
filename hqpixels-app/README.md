@@ -57,7 +57,7 @@ The app has not been deployed to Replit. The PostgreSQL adapter and deployment s
 
 ## Verification and boundaries
 
-Verified locally: `npm run check`, `npm test` (14 passing tests), and `npm run build`. Tests cover manual capture/review/commit, duplicate requests, stale revisions, workspace isolation, authentication, CSRF/origin checks, database rollback and persistence, canceled/failed mocked AI runs, stale corrections, run timeout recovery, and WAV validation. Provider tests use mocks and never call Google.
+Verified locally: `npm run check`, `npm test` (15 passing tests), and `npm run build`. Tests cover manual capture/review/commit, duplicate requests, stale revisions, workspace isolation, authentication, CSRF/origin checks, database rollback and persistence, canceled/failed mocked AI runs, stale corrections, run timeout recovery, and WAV validation. Provider tests use mocks and never call Google.
 
 Live Google checks on October 25, 2026 passed for task extraction, speech generation, and a synthetic audio-to-draft round trip (including a twenty-minute duration). The previously configured `gemini-3.8-flash` returned deadline errors, and Google rejected `gemini-2.5-flash` for this new account; the local task model now uses the verified `gemini-3.1-flash-lite`. Physical microphone capture, responsive layouts, keyboard interaction, and PostgreSQL deployment remain unverified.
 

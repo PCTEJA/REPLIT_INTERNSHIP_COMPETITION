@@ -13,3 +13,12 @@ hqpixels-key-*.png
 /*.zip
 .vercel
 .env*
+
+# Private local evidence and generation metadata
+hqpixels-domain-connected.png
+**/generation-log.json
+**/*.sqlite*
+**/*.db
+**/*.pem
+**/*.key
+/private/
