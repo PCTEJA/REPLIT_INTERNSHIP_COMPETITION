@@ -1,8 +1,8 @@
 import 'dotenv/config';
 import { resolve } from 'node:path';
 import express from 'express';
-import { createApp } from './app';
-import { Store } from './store';
+import { createApp } from './app.js';
+import { Store } from './store.js';
 const production=process.env.NODE_ENV==='production';
 if(production && (!process.env.DATABASE_URL || !process.env.APP_ORIGIN?.startsWith('https://'))) throw new Error('Production needs DATABASE_URL and an HTTPS APP_ORIGIN. Local SQLite is for development only.');
 const store=new Store(process.env.DATABASE_URL);await store.init();

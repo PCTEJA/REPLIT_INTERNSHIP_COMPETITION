@@ -1,7 +1,7 @@
 import { randomUUID } from 'node:crypto';
 import { z } from 'zod';
-import type { Candidate, Draft, Run, Workspace } from '../shared/types';
-import { fail, hash } from './store';
+import type { Candidate, Draft, Run, Workspace } from '../shared/types.js';
+import { fail, hash } from './store.js';
 
 export const dateSchema = z.string().regex(/^\d{4}-\d{2}-\d{2}$/).refine(s => { const d = new Date(s + 'T12:00:00Z'); return Number.isFinite(+d) && d.toISOString().slice(0,10) === s; }, 'Choose a real calendar date.');
 export const candidateSchema = z.object({ id: z.string().uuid(), title: z.string().trim().min(1).max(200), dueDate: dateSchema.nullable(), duration: z.number().int().min(1).max(1440).nullable(), note: z.string().max(1000), question: z.string().max(400), excluded: z.boolean() });

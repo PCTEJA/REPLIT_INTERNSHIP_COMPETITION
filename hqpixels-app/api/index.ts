@@ -1,7 +1,7 @@
 import type { Request, Response } from 'express';
 import { attachDatabasePool } from '@vercel/functions';
-import { createApp } from '../server/app';
-import { Store } from '../server/store';
+import { createApp } from '../server/app.js';
+import { Store } from '../server/store.js';
 
 let initialized: Promise<ReturnType<typeof createApp>> | undefined;
 async function initialize() {

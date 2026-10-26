@@ -3,7 +3,7 @@ import { Pool } from 'pg';
 import { mkdirSync } from 'node:fs';
 import { dirname } from 'node:path';
 import { randomUUID, createHash } from 'node:crypto';
-import type { User, Workspace } from '../shared/types';
+import type { User, Workspace } from '../shared/types.js';
 
 type Query = (sql: string, values?: unknown[]) => Promise<any[]>;
 export class AppError extends Error { constructor(public status: number, message: string) { super(message); } }

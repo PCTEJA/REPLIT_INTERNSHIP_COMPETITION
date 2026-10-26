@@ -1,8 +1,8 @@
 import { GoogleGenAI } from '@google/genai';
 import { z } from 'zod';
-import type { Candidate, Task } from '../shared/types';
-import { AppError, fail } from './store';
-import { candidate, dateSchema, localDate } from './domain';
+import type { Candidate, Task } from '../shared/types.js';
+import { AppError, fail } from './store.js';
+import { candidate, dateSchema, localDate } from './domain.js';
 
 const itemSchema = z.object({ id: z.string().nullable(), title: z.string().trim().min(1).max(200), dueDate: dateSchema.nullable(), duration: z.number().int().min(1).max(1440).nullable(), note: z.string().max(1000), question: z.string().max(400), excluded: z.boolean() });
 const outputSchema = z.object({ transcript: z.string().max(8000), message: z.string().max(1000), tasks: z.array(itemSchema).max(20) });

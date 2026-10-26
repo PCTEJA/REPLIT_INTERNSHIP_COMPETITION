@@ -5,10 +5,10 @@ import helmet from 'helmet';
 import { randomBytes, randomUUID, scrypt, timingSafeEqual } from 'node:crypto';
 import { promisify } from 'node:util';
 import { z } from 'zod';
-import { AppError, Store, fail, hash } from './store';
-import { applyDraft, assertRevision, dateSchema, draftSummary, editSchema, event, getDraft, getRun, inputSchema, isSavePhrase, manualTasks, now, selectedHash, validateAudio, validateTimezone, withOperation } from './domain';
-import { GoogleProvider, type AIProvider } from './google';
-import type { Draft, Run, User } from '../shared/types';
+import { AppError, Store, fail, hash } from './store.js';
+import { applyDraft, assertRevision, dateSchema, draftSummary, editSchema, event, getDraft, getRun, inputSchema, isSavePhrase, manualTasks, now, selectedHash, validateAudio, validateTimezone, withOperation } from './domain.js';
+import { GoogleProvider, type AIProvider } from './google.js';
+import type { Draft, Run, User } from '../shared/types.js';
 
 const scryptAsync = promisify(scrypt);
 const cookie = 'hq_session';
