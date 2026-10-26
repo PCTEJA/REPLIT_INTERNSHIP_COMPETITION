@@ -22,3 +22,11 @@ hqpixels-domain-connected.png
 **/*.pem
 **/*.key
 /private/
+
+# Motion-animation production assets stay local (frames, prompts, storyboards, videos)
+/docs/motion-video*/
+/docs/HQPIXELS-*motion-kit.zip
+/docs/HQPIXELS-*MUSE-Flow-Kit.zip
+
+# Temporary Handshake form and editor evidence
+/docs/handshake-*.png
