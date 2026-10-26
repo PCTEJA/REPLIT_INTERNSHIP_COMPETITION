@@ -182,6 +182,17 @@ export function createApp(store: Store, provider: AIProvider = new GoogleProvide
     }
     await aiLimit(uid);res.json(await provider.query(input,tasks));
   });
+  app.post('/api/tasks/quick',async(req,res)=>{
+    const input=z.object({text:z.string().trim().min(1).max(8000),operationId:idSchema}).parse(req.body);
+    res.json(await store.change(res.locals.user.id,s=>withOperation(s,input.operationId,{action:'quick',...input},()=>{
+      const tasks=manualTasks(input.text);if(s.tasks.length+tasks.length>500)return fail(429,'This workspace has reached its 500-task limit.');
+      const draftId=randomUUID(),runId=randomUUID();
+      s.drafts.push({id:draftId,revision:1,transcript:input.text,tasks,status:'saved',source:'manual',createdAt:now(),updatedAt:now(),history:[],runId,message:'Saved directly from the deck.'});
+      for(const t of tasks)s.tasks.push({...t,status:'ready',version:1,createdAt:now(),completedAt:null,draftId});
+      const run:Run={id:runId,type:'commit',status:'success',createdAt:now(),events:[],draftId};event(run,'quick_save','success',performance.now(),`${tasks.length} tasks explicitly saved from the deck.`);s.runs.push(run);
+      return {count:tasks.length,ids:tasks.map(t=>t.id)};
+    })));
+  });
   app.post('/api/tasks/:id/action',async(req,res)=>{
     const input=z.object({operationId:idSchema,version:z.number().int().positive(),action:z.enum(['complete','reopen','archive','restore','reschedule']),dueDate:dateSchema.nullable().optional(),confirmed:z.literal(true)}).parse(req.body);
     res.json(await store.change(res.locals.user.id,s=>withOperation(s,input.operationId,{id:req.params.id,...input},()=>{

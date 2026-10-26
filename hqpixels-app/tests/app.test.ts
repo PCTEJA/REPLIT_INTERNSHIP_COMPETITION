@@ -84,3 +84,19 @@ test('audio validation accepts canonical speech-sized WAV and rejects silence, o
   assert.throws(()=>validateAudio(wav(61).toString('base64')),/60 seconds/);
   valid.writeUInt32LE(48000,24);assert.throws(()=>validateAudio(valid.toString('base64')),/supported WAV/);
 });
+
+test('direct deck save is atomic, validated, isolated and safe to retry',async()=>{
+  const h=await harness();try{
+    const body={text:'Write outline\nSend update',operationId:randomUUID()};
+    const first=await h.post('/tasks/quick',body).expect(200);
+    assert.equal(first.body.count,2);
+    assert.deepEqual((await h.post('/tasks/quick',body).expect(200)).body,first.body);
+    await h.post('/tasks/quick',{...body,text:'Different task'}).expect(409);
+    await h.post('/tasks/quick',{text:Array(21).fill('Task').join('\n'),operationId:randomUUID()}).expect(422);
+    const state=(await h.agent.get('/api/state').expect(200)).body;
+    assert.equal(state.tasks.length,2);assert.ok(state.tasks.every((t:any)=>t.status==='ready'));
+    assert.equal(state.drafts[0].status,'saved');
+    await request(h.app).post('/api/tasks/quick').send(body).expect(401);
+    await h.agent.post('/api/tasks/quick').send({...body,operationId:randomUUID()}).expect(403);
+  }finally{await h.store.close();}
+});

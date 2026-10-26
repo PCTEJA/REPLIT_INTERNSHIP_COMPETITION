@@ -11,3 +11,5 @@ hqpixels-key-*.png
 
 # Packaged copies of the source and design assets
 /*.zip
+.vercel
+.env*
