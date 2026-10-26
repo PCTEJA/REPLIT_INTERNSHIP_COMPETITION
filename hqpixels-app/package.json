@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "engines": {"node": ">=22.13.0"},
+  "engines": {
+    "node": ">=22.13.0"
+  },
   "scripts": {
     "dev": "tsx watch server/index.ts",
     "build": "tsc --noEmit && vite build && esbuild server/index.ts --bundle --platform=node --format=esm --packages=external --outfile=dist/server.js",
@@ -15,6 +17,7 @@
     "@fontsource-variable/dm-sans": "^5.2.8",
     "@fontsource-variable/outfit": "^5.2.8",
     "@google/genai": "^1.30.0",
+    "@vercel/functions": "^3.10.3",
     "cookie-parser": "^1.4.7",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",

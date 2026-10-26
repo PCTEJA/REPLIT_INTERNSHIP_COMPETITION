@@ -1,5 +1,6 @@
 import express, { type Request, type Response, type NextFunction } from 'express';
 import cookieParser from 'cookie-parser';
+import { waitUntil } from '@vercel/functions';
 import helmet from 'helmet';
 import { randomBytes, randomUUID, scrypt, timingSafeEqual } from 'node:crypto';
 import { promisify } from 'node:util';
@@ -74,7 +75,7 @@ export function createApp(store: Store, provider: AIProvider = new GoogleProvide
   app.get('/api/export', async (_req,res) => { const data = await store.workspace(res.locals.user.id); res.set('Content-Disposition','attachment; filename="hqpixels-tasks.json"').json({exportedAt:now(),timezone:data.timezone,tasks:data.tasks,drafts:data.drafts.map(({history,...d})=>d)}); });
 
   async function aiLimit(userId: string) { await store.limit('ai-user:'+userId, Number(process.env.AI_DAILY_LIMIT || 30),86400000); await store.limit('ai-global',Number(process.env.AI_GLOBAL_DAILY_LIMIT || 300),86400000); }
-  function enqueue(fn: () => Promise<void>) { const p = Promise.resolve().then(fn); jobs.add(p); void p.finally(() => jobs.delete(p)).catch(()=>{}); }
+  function enqueue(fn: () => Promise<void>) { const p = Promise.resolve().then(fn); jobs.add(p); if (process.env.VERCEL) waitUntil(p); void p.finally(() => jobs.delete(p)).catch(()=>{}); }
   async function failed(userId: string, runId: string, e: unknown) {
     try { await store.change(userId,s => { const r = getRun(s,runId); if (r.status !== 'running') return; r.status='error'; r.error=e instanceof AppError ? e.message : 'This run could not finish. Your existing work is safe. Please try again.'; event(r,'recover','error',performance.now(),r.error); }); } catch { /* Persistent storage unavailable: client retains its input and reports connection failure. */ }
   }
