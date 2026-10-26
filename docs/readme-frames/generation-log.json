@@ -1,0 +1,55 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-10-26",
+  "description": "AI-styled presentation frames; original screenshots and concepts retained.",
+  "assets": [
+    {
+      "source": "docs/screenshots/welcome.png",
+      "output": "docs/readme-frames/welcome.png",
+      "generatedFile": "exec-fad0d4b0-0f8c-4131-81fe-a7a7baee1132.png",
+      "prompt": "Use case: compositing. Asset type: premium GitHub README product presentation frame for HQPIXELS. Input image 1 is the edit target. Present this exact desktop application screenshot inside a beautiful restrained rounded browser window frame with a very slim cream top bar and three subtle dots, straight-on, no perspective or rotation. Preserve the complete original interface, all text, exact layout, icons, colors, and visible content faithfully. Do not invent features or add UI content. Only improve the surrounding presentation: warm ivory paper studio backdrop, delicate grain, elegant soft ambient shadow, subtle terracotta and sage color accents confined to outer corners. Wide landscape canvas around 2:1, screenshot fills at least 90% width, generous but restrained equal margins. Crisp readable UI, refined editorial product photography finish. No additional titles, captions, watermarks, logos, hands, scenery, or props. Keep framing cohesive with warm tactile paper aesthetic. Highest available resolution."
+    },
+    {
+      "source": "docs/screenshots/deck.png",
+      "output": "docs/readme-frames/deck.png",
+      "generatedFile": "exec-2fdb40fd-ffd1-4d02-98ec-96315d6bec42.png",
+      "prompt": "Use case: compositing. Asset type: premium GitHub README product presentation frame for HQPIXELS. Input image 1 is the edit target. Present this exact desktop application screenshot inside a beautiful restrained rounded browser window frame with a very slim cream top bar and three subtle dots, straight-on, no perspective or rotation. Preserve the complete original interface, all text, exact layout, icons, colors, and visible content faithfully. Do not invent features or add UI content. Only improve the surrounding presentation: warm ivory paper studio backdrop, delicate grain, elegant soft ambient shadow, subtle terracotta and sage color accents confined to outer corners. Wide landscape canvas around 2:1, screenshot fills at least 90% width, generous but restrained equal margins. Crisp readable UI, refined editorial product photography finish. No additional titles, captions, watermarks, logos, hands, scenery, or props. Keep framing cohesive with warm tactile paper aesthetic. Highest available resolution."
+    },
+    {
+      "source": "docs/screenshots/capture.png",
+      "output": "docs/readme-frames/capture.png",
+      "generatedFile": "exec-71946c79-ac1f-4e88-b187-58a97fd5b973.png",
+      "prompt": "Use case: compositing. Asset type: premium GitHub README product presentation frame for HQPIXELS. Input image 1 is the edit target. Present this exact desktop application screenshot inside a beautiful restrained rounded browser window frame with a very slim cream top bar and three subtle dots, straight-on, no perspective or rotation. Preserve the complete original interface, all text, exact layout, icons, colors, and visible content faithfully. Do not invent features or add UI content. Only improve the surrounding presentation: warm ivory paper studio backdrop, delicate grain, elegant soft ambient shadow, subtle terracotta and sage color accents confined to outer corners. Wide landscape canvas around 2:1, screenshot fills at least 90% width, generous but restrained equal margins. Crisp readable UI, refined editorial product photography finish. No additional titles, captions, watermarks, logos, hands, scenery, or props. Keep framing cohesive with warm tactile paper aesthetic. Highest available resolution."
+    },
+    {
+      "source": "docs/screenshots/review.png",
+      "output": "docs/readme-frames/review.png",
+      "generatedFile": "exec-5bc1a045-87b1-466c-b203-bf0da9081b3b.png",
+      "prompt": "Use case: compositing. Asset type: premium GitHub README product presentation frame for HQPIXELS. Input image 1 is the edit target. Present this exact desktop application screenshot inside a beautiful restrained rounded browser window frame with a very slim cream top bar and three subtle dots, straight-on, no perspective or rotation. Preserve the complete original interface, all text, exact layout, icons, colors, and visible content faithfully. Do not invent features or add UI content. Only improve the surrounding presentation: warm ivory paper studio backdrop, delicate grain, elegant soft ambient shadow, subtle terracotta and sage color accents confined to outer corners. Wide landscape canvas around 2:1, screenshot fills at least 90% width, generous but restrained equal margins. Crisp readable UI, refined editorial product photography finish. No additional titles, captions, watermarks, logos, hands, scenery, or props. Keep framing cohesive with warm tactile paper aesthetic. Highest available resolution."
+    },
+    {
+      "source": "docs/screenshots/focus.png",
+      "output": "docs/readme-frames/focus.png",
+      "generatedFile": "exec-6cdb1f7a-1b8f-46cf-b870-5fed3c698404.png",
+      "prompt": "Use case: compositing. Asset type: premium GitHub README product presentation frame for HQPIXELS. Input image 1 is the edit target. Present this exact desktop application screenshot inside a beautiful restrained rounded browser window frame with a very slim cream top bar and three subtle dots, straight-on, no perspective or rotation. Preserve the complete original interface, all text, exact layout, icons, colors, and visible content faithfully. Do not invent features or add UI content. Only improve the surrounding presentation: warm ivory paper studio backdrop, delicate grain, elegant soft ambient shadow, subtle terracotta and sage color accents confined to outer corners. Wide landscape canvas around 2:1, screenshot fills at least 90% width, generous but restrained equal margins. Crisp readable UI, refined editorial product photography finish. No additional titles, captions, watermarks, logos, hands, scenery, or props. Keep framing cohesive with warm tactile paper aesthetic. Highest available resolution."
+    },
+    {
+      "source": "hqpixels/assets/01-welcome.png",
+      "output": "docs/readme-frames/concept-welcome.png",
+      "generatedFile": "exec-ea6e1a50-50da-469b-aaf3-352e3362a6fa.png",
+      "prompt": "Use case: compositing. Asset type: premium GitHub README product presentation frame for HQPIXELS. Input image 1 is the edit target. Present this exact mobile design concept inside a beautiful restrained slim rounded ivory phone-shaped frame, straight-on, no perspective or rotation. Preserve the complete original interface, all text, exact layout, icons, colors, and visible content faithfully. Do not invent features or add UI content. Only improve the surrounding presentation: warm ivory paper studio backdrop, delicate grain, elegant soft ambient shadow, subtle terracotta and sage color accents confined to outer corners. Portrait canvas, phone fills 90% of height and 86% of width, no notch covering content. Crisp readable UI, refined editorial product photography finish. No additional titles, captions, watermarks, logos, hands, scenery, or props. Keep framing cohesive with warm tactile paper aesthetic. Highest available resolution."
+    },
+    {
+      "source": "hqpixels/assets/02-voice-capture.png",
+      "output": "docs/readme-frames/concept-capture.png",
+      "generatedFile": "exec-b4bf5e1d-ad7f-4918-90a7-e25895acbc7a.png",
+      "prompt": "Use case: compositing. Asset type: premium GitHub README product presentation frame for HQPIXELS. Input image 1 is the edit target. Present this exact mobile design concept inside a beautiful restrained slim rounded ivory phone-shaped frame, straight-on, no perspective or rotation. Preserve the complete original interface, all text, exact layout, icons, colors, and visible content faithfully. Do not invent features or add UI content. Only improve the surrounding presentation: warm ivory paper studio backdrop, delicate grain, elegant soft ambient shadow, subtle terracotta and sage color accents confined to outer corners. Portrait canvas, phone fills 90% of height and 86% of width, no notch covering content. Crisp readable UI, refined editorial product photography finish. No additional titles, captions, watermarks, logos, hands, scenery, or props. Keep framing cohesive with warm tactile paper aesthetic. Highest available resolution."
+    },
+    {
+      "source": "hqpixels/assets/03-draft-review.png",
+      "output": "docs/readme-frames/concept-review.png",
+      "generatedFile": "exec-a3b96107-9934-4a52-b0cd-735e8886fa42.png",
+      "prompt": "Use case: compositing. Asset type: premium GitHub README product presentation frame for HQPIXELS. Input image 1 is the edit target. Present this exact mobile design concept inside a beautiful restrained slim rounded ivory phone-shaped frame, straight-on, no perspective or rotation. Preserve the complete original interface, all text, exact layout, icons, colors, and visible content faithfully. Do not invent features or add UI content. Only improve the surrounding presentation: warm ivory paper studio backdrop, delicate grain, elegant soft ambient shadow, subtle terracotta and sage color accents confined to outer corners. Portrait canvas, phone fills 90% of height and 86% of width, no notch covering content. Crisp readable UI, refined editorial product photography finish. No additional titles, captions, watermarks, logos, hands, scenery, or props. Keep framing cohesive with warm tactile paper aesthetic. Highest available resolution."
+    }
+  ]
+}
